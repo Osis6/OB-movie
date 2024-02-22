@@ -1,0 +1,47 @@
+/** @format */
+
+.header {
+  margin: 0 2.5rem;
+  padding: 0.5rem 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerLeft,
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+a > span {
+  margin: 0 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+}
+
+a > span:hover {
+  color: orange;
+}
+
+.header__icon {
+  width: 150px;
+  cursor: pointer;
+}
+
+.user__avatar {
+  font-size: 2rem;
+}
+@media (max-width: 830px) {
+  .header {
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .headerRight {
+    width: 100%;
+    justify-content: space-around;
+    margin: 40px;
+  }
+}
