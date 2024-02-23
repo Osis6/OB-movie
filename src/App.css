@@ -1,11 +1,5 @@
 /** @format */
 
-/* .App {
-  background-color: black;
-  color: white;
-  font-family: sans-serif;
-  width: 100%;
-} */
 .App {
   background-color: black;
   color: white;
@@ -16,5 +10,5 @@
   bottom: 0;
   left: 0;
   right: 0;
-  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-y: auto;
 }

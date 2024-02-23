@@ -9,7 +9,10 @@ const MovieList = () => {
   const [movieList, setMovieList] = useState([]);
   const { type } = useParams();
 
-  // Wrap the definition of getData with useCallback
+  const formatTitle = (title) => {
+    return title.replace('_', ' ');
+  };
+
   const getData = useCallback(() => {
     fetch(
       `https://api.themoviedb.org/3/movie/${
@@ -26,7 +29,9 @@ const MovieList = () => {
 
   return (
     <div className='movie__list'>
-      <h2 className='list__title'>{(type ? type : 'POPULAR').toUpperCase()}</h2>
+      <h2 className='list__title'>
+        {formatTitle(type ? type : 'POPULAR').toUpperCase()}
+      </h2>
       <div className='list__cards'>
         {movieList.map((movie) => (
           <Cards key={movie.id} movie={movie} />
