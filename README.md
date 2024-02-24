@@ -1,5 +1,5 @@
 <!-- @format -->
 
-# Getting Started with Create React App
+# OB MOVIE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## un site Web dédié au monde du cinéma. Cette plateforme propose une sélection de contenu, des films populaires, des sorties passionnantes à venir.
